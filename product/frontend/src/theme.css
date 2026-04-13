@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  background:#000;
+  color:#f5f5f7;
+}
+
+.grain::after{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:.03;
+  pointer-events:none;
+  background-image:url(https://lh3.googleusercontent.com/aida-public/AB6AXuA74qtybVvNtfovDVtobSxRUx9ky6MCvWJDCzCEw8pdtH7LQGlxP5Uc2NRG7uor_Wkv7Dj8JKN4lQF8KRo1tghwPmQaMBt3NFs5Fph8IMf9FL5mt8nwCxg8Qs2hB8jTQmvcPgga4mf0MVWu1s4Asg35jAV3a43j702SupDzzKv_iMBRraBAkJl3p_18My26iJy6_o9at2L2ANW1ejOF6mJEhIfrRYvsimkv5oPNLkG8pZN1t8bQnbMdF7B7-9hdmDoR0d2AZsY9sOk);
+  z-index:1;
+}
+
+.glass{
+  background:rgba(22,22,23,.7);
+  backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:20px;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.glass:not(header):hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 229, 255, 0.3);
+  box-shadow: 0 15px 50px -10px rgba(0, 229, 255, 0.12), inset 0 0 25px rgba(0, 229, 255, 0.04);
+  z-index: 10;
+}
+
+.bento-card{
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.bento-card:hover{
+  transform:scale(1.03) translateY(-4px);
+  border-color: rgba(0, 229, 255, 0.3);
+  box-shadow: 0 20px 50px -10px rgba(0, 229, 255, 0.12), inset 0 0 25px rgba(0, 229, 255, 0.04);
+}
+
+.nav-link{
+  font-size:12px;
+  color:#86868b;
+  cursor:pointer;
+}
+
+.nav-link:hover{
+  color:#fff;
+}
+
+button:hover{
+  transform: translateY(-1px);
+}
+
+button:active{
+  transform: scale(.97);
+}
